@@ -25,7 +25,7 @@ jobs:
         os: [ubuntu-latest, windows-2016]
       - uses: actions/upload-artifact@master
         with:
-          name: webpack artifacts
+    needs: build
           path: public/
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
